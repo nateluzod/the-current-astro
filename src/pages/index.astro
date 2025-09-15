@@ -8,9 +8,24 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>The Current - Accessible Civic Intelligence</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-off-white text-dark-gray">
+		<div class="w-full lg:max-w-3xl h-screen flex flex-col justify-center p-12 lg:p-24 space-y-6 lg:space-y-8">
+			<h1 class="font-serif text-7xl lg:text-9xl font-[900] tracking-tight leading-[0.77] lg:leading-[0.77]">The<br />Current</h1>
+			<hr class="border-dark-gray border-b-2 w-24" />
+			<p class="font-light font-sans text-2xl tracking-tight leading-normal">Hyper-local, for everyone (eventually). <br /><strong class="font-[500]">In private beta.</strong></p>
+		  </div>		
 	</body>
 </html>
+
+<style>
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+</style>
