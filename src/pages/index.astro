@@ -3,29 +3,71 @@
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>The Current - Accessible Civic Intelligence</title>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>The Current - Accessible Civic Intelligence</title>
+    <meta
+      name="description"
+      content="The Current is a hyper-local, accessible civic intelligence platform focused on de-mystifying the complex world of local government."
+    />
+    <meta name="author" content="The Current" />
+    <meta
+      name="keywords"
+      content="local government, civic intelligence, hyper-local, accessible, private beta"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="yandexbot" content="index, follow" />
+    <meta name="sitemap" content="https://thecurrent.com/sitemap.xml" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-	
-	</head>
-	<body class="bg-off-white text-dark-gray">
-		<div class="w-full lg:max-w-3xl h-screen flex flex-col justify-center p-12 lg:p-24 space-y-6 lg:space-y-8">
-			<h1 class="font-serif text-7xl lg:text-9xl font-[900] tracking-tight leading-[0.77] lg:leading-[0.77]">The<br />Current</h1>
-			<hr class="border-dark-gray border-b-2 w-24" />
-			<p class="font-light font-sans text-2xl tracking-tight leading-normal">Hyper-local, for everyone (eventually). <br /><strong class="font-[500]">In private beta.</strong></p>
-		  </div>		
-	</body>
+    <!-- 1) Warm up connections -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- 2) Load the stylesheet without blocking render -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      media="print"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      />
+    </noscript>
+  </head>
+  <body class="bg-off-white text-dark-gray">
+    <div
+      class="w-full lg:max-w-3xl h-screen flex flex-col justify-center p-12 lg:p-24 space-y-6 lg:space-y-8"
+    >
+      <h1
+        class="font-serif text-7xl lg:text-9xl font-[900] tracking-tight leading-[0.77] lg:leading-[0.77]"
+      >
+        The<br />Current
+      </h1>
+      <hr class="border-dark-gray border-b-2 w-24" />
+      <p class="font-light font-sans text-2xl tracking-tight leading-normal">
+        Hyper-local, for everyone. <br /><strong class="font-[500]"
+          >In private beta.</strong
+        >
+      </p>
+    </div>
+  </body>
 </html>
 
 <style>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 </style>
